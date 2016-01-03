@@ -3,10 +3,10 @@ class DisplayMessageActivity < ActionBarActivity
   def onCreate(savedInstanceState)
     super
 
-    setContentView(resources.getIdentifier('activity_display_message', 'layout', 'tv.motioninmotion.myfirstapp')
+    setContentView(resources.getIdentifier('activity_display_message', 'layout', 'tv.motioninmotion.myfirstapp'))
 
     if savedInstanceState == nil
-      getSupportFragmentManager().beginTransaction().add(resources.getIdentifier('container', 'id', 'tv.motioninmotion.myfirstapp', PlaceholderFragment.new).commit()
+      getSupportFragmentManager().beginTransaction().add(resources.getIdentifier('container', 'id', 'tv.motioninmotion.myfirstapp', PlaceholderFragment.new).commit())
     end
   end
 
